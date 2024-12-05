@@ -8,6 +8,7 @@
 public class CandidateWelcomeEmailHandler {
  
     public static void sendWelcomeEmail(List<Candiate__c> newCandidates) {
+
         List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
         List<Contact> contactsToCreate = new List<Contact>();
  
