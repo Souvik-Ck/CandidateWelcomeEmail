@@ -1,0 +1,43 @@
+Business Need:  
+We want to provide a warm welcome to every new candidate who applies to our company. Currently, the process is manual and time-consuming, leading to delays in communication and a less-than-ideal candidate experience. We need to automate the sending of personalized welcome emails to candidates as soon as they submit their application through the Recruitment App. 
+
+
+Functional Requirements: 
+1. Trigger: The welcome email should be sent automatically whenever a new 'Candidate' record is created in Salesforce. 
+
+2. Email Content: 
+* The email should include a personalized greeting addressing the candidate by their name. 
+* Provide a brief overview of the company, its culture, and values. 
+* Outline the next steps in the recruitment process, including any upcoming assessments or interviews. 
+* Express appreciation for the candidate's interest in the company. 
+
+1. Email Template: 
+* Create a visually appealing and professional email template that aligns with the company's branding. 
+* Use merge fields to dynamically populate the candidate's name and other relevant information. 
+   Technical Requirements: 
+ 
+Apex Trigger: 
+* Develop an Apex trigger on the 'Candidate' object to capture new record creation events.  Implement trigger logic to send the welcome email using a separate Apex handler class. 
+* Adhere to Cloudkaptan Coding Standards, including: 
+* Clear and descriptive trigger and handler class names. 
+* Bulkification to handle potential bulk Candidate creation scenarios. 
+* Error handling using try-catch blocks to gracefully manage exceptions. 
+* Thorough unit testing with at least 90% code coverage. 
+
+
+Email Template: 
+* Design an email template that meets the content and branding requirements. 
+
+Test Class : 
+Write the Test class for unit testing and scenario testing , while following the test class guidelines from the Cloudkaptan Standards and Coding Guidelines.   
+
+Additional Considerations: 
+* Email Deliverability: Ensure the email template and sending mechanism are optimized for deliverability and can be tracked via email log. 
+* Write a Apex Trigger (Quick Glimpse of Standards)
+* Keep trigger logic minimal and delegate complex logic to a trigger handler class. 
+* Use a trigger framework to manage trigger execution and avoid recursion. 
+* Also keep in mind the guidelines for the ExtendedTriggerHandler 
+* Ensure the trigger is bulkified to handle multiple records efficiently. 
+* Write test classes to cover various trigger scenarios and ensure proper functionality. 
+
+ 
